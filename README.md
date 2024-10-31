@@ -22,7 +22,7 @@ To test connection between host computer and ***espSnap***, use any web browser 
 **http://espsnap.local/**
 
 
-#### Functions implemented in ***espSnap*** are as follows
+### Functions implemented in ***espSnap*** are as follows
 
 | Basic Arduino Functions  |
 |:------------------------:|
@@ -81,7 +81,7 @@ For detailed example of how to use the **"Custom Block"**, refer to the [Compani
 
 **Companion Tutorials and Examples : [Nan Hwa Snap4Arduino Training](https://github.com/tomoto-my/nanhwasnap4arduinotraining/)**
 
-This companion tutorial contains 1 section as Basic Introduction to **_Snap_** and 2 sections with examples on using the **"Custom Blocks"** of **_espSnap_** in **Snap4Arduino**
+This companion tutorial contains 1 section as **_Basic Introduction to Snap_** and 2 sections with examples on using the **"Custom Blocks"** of **_espSnap_** in **Snap4Arduino**
 
 <BR>
 
