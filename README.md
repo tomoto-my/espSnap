@@ -6,23 +6,23 @@
 
 It follows the concept of [**Firmata Lbirary**](https://docs.arduino.cc/retired/hacking/software/FirmataLibrary/) which allows communication between Arduino boards and host computer. However, this implementation **DO NOT** follow the [**Firmata Protocol**](https://github.com/firmata/protocol).
 
-In this implementation, we used http via the ***url block*** ![**url**](assets/images/url_block_espsnap_local_h20.png) in **Snap4Arduino** as the integration method. With ESP32 or ESP8266 as the preferred Arduino boards we had developed and test it for, **Wi-Fi** is the chosen communication method.
+In this implementation, we used http via the ***url block*** ![**url**](assets/images/url_block_espsnap_local_h20.png) in **Snap4Arduino** as the integration method. With ESP32 or ESP8266 as the target Arduino boards we planned to use, **Wi-Fi** is the preferred communication method.
 
 We provide **"Custom Blocks"** in **Snap4Arduino** so that **Snap4Arduino** users will feel the Arduino board as an integrated part of it, and focus on using it instead of learn how to use it.
 
-***espSnap*** can be configured to connect to any local **Wi-Fi** Access Point, or on failure, will start up under SoftAP mode allowing up to 4 host computers to connect to it.
+***espSnap*** can be configured to connect to any local **Wi-Fi** Access Point, or on failure, will start up under **SoftAP mode** allowing up to 4 host computers to connect to it.
 
-mDNS has been configured, this allows the use of domain name in url instead of IP address. The default mDNS ID is "***espsnap.local***"<BR>
+**mDNS** has been configured, this allows the use of domain name in url instead of IP address. The default **mDNS ID** is "***espsnap.local***"<BR>
 
-The default Soft AP<BR>
+The default **SoftAP mode**<BR>
 - SSID : **espsnap_xxxxxx** <BR>
     where xxxxxx is the last 6 characters of MAC address<BR>
 - PASSWORD : **test1234**<BR>
 
-All mDNS, SSID and PASSWORD can be changed via web browser.
-
 To test connection between host computer and ***espSnap***, use any web browser and type the following url in the address bar<BR>
 **http://espsnap.local/**
+
+mDNS, SSID and PASSWORD can all be change via web browser from **http://espsnap.local/config**
 
 
 ### Functions implemented in ***espSnap*** are as follows
@@ -71,20 +71,25 @@ Latest release [![espSnap release-v1.0.0](/assets/images/github_espSnap_release-
 ---
 ## Custom Block for ***espSnap***
 
-**"Custom Block"** for ***espSnap*** is available in subdirectory `assets/Snap_Library/`
+**"Custom Block"** for **_espSnap_** is available in subdirectory **`assets/Snap_Library/`**
 
-The file `espSnap_Library.xml` contains **"Custom Blocks"** for all the Basic Arduino Functions and Additional Functions listed above.
+The file **`espSnap_Library.xml`** contains **"Custom Blocks"** for all the **Basic Arduino Functions** and **Additional Functions** listed above.
 
-For detailed example of how to use the **"Custom Block"**, refer to the [Companion Tutorials below](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#companion-tutorials-with-examples-available-at).
+
+For detailed example of how to use the **"Custom Block"**, refer to the [**Companion Tutorials with Examples**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#companion-tutorials-with-examples-available-at) below.
 
 <BR>
 
 ---
-## Companion Tutorials with Examples Available at
+## Companion Tutorials with Examples
 
-**Companion Tutorials and Examples : [Nan Hwa Snap4Arduino Training](https://github.com/tomoto-my/nanhwasnap4arduinotraining/)**
+**Companion Tutorials with Examples** is available at :
 
-This companion tutorial contains 1 section as **_Basic Introduction to Snap_** and 2 sections with examples on using the **"Custom Blocks"** of **_espSnap_** in **Snap4Arduino**
+[**Nan Hwa Snap4Arduino Training**](https://github.com/tomoto-my/nanhwasnap4arduinotraining/)
+
+This companion tutorial contains
+- 1 section with examples as **_Basic Introduction to Snap_**, and
+- 2 sections with examples on using the **"Custom Blocks"** of **_espSnap_** in **Snap4Arduino**
 
 <BR>
 
@@ -92,15 +97,17 @@ This companion tutorial contains 1 section as **_Basic Introduction to Snap_** a
 
 # Installation of ***espSnap*** on ESP32/ESP8266 board
 
-Download the latest version of ***[espSnap main.zip](https://github.com/tomoto-my/espSnap/archive/refs/heads/main.zip)***
+Follow the following steps to download and install ***espSnap*** on the ESP32/ESP8266 board of your choice
 
-Extract it under your `Arduino` or `Arduino/sketch` subdirectory
+- Download the latest version of ***[espSnap main.zip](https://github.com/tomoto-my/espSnap/archive/refs/heads/main.zip)***
 
-Use your Arduino IDE to open the **`espSnap.ino`** Arduino Sketch.
+- Extract it under your `Arduino` or `Arduino/sketch` subdirectory
 
-**If you plan to use a local Wi-Fi Access Point, remember to change the SSID and PASSWORD.** Otherwise, the SSID and PASSWORD can be change any time via web browser.
+- Use your Arduino IDE to open the **`espSnap.ino`** Arduino Sketch.
 
-Follow the usual step of selecting the ESP32/ESP8266 board to program and compile and upload.
+- **If you plan to use a local Wi-Fi Access Point, remember to change the SSID and PASSWORD.** Otherwise, the SSID and PASSWORD can be change any time via web browser.
+
+- Follow the usual step of selecting the ESP32/ESP8266 board to program and compile and upload.
 
 If some libraries required are missing during compilation, please make sure the list of libraries as listed below had been installed. The version of the various libraries used had been included just in case some user face compatibility issue. As a normal practice, just install the latest version. It is not necessary to use the same version unless there is problem compiling the sketch.
 
