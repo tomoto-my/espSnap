@@ -30,7 +30,7 @@ The functionality implemented by **_espSnap_** are as follows
 | Digital Output           |
 | Analog Input             |
 | Analog Output            |
-|   - DAC [^1]             |
+|   - DAC[^1]             |
 |   - PWM                  |
 |   - Servo                |
 |   - Tone                 |
