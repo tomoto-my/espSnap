@@ -30,12 +30,12 @@ The functionality implemented by **_espSnap_** are as follows
 | Digital Output           |
 | Analog Input             |
 | Analog Output            |
-|   - DAC <sup>1</sup>     |
+|   - DAC [^1]             |
 |   - PWM                  |
 |   - Servo                |
 |   - Tone                 |
 
-###### Note 1 : Analog Output - DAC is only available on ESP32
+[^1] : Analog Output - DAC is only available on ESP32
 
 
 | Additional Functions        | Arduino Parts            |
