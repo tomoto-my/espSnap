@@ -23,13 +23,6 @@ To test connection between host computer and espSnap, use any web browser and ty
 
 The functionality implemented by **_espSnap_** are as follows
 
-Here is a simple footnote[^3].
-
-A footnote can also have multiple lines[^2].
-
-[^3]: My reference.
-[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
-  This is a second line.
 
 | Basic Arduino Functions  |
 |:------------------------:|
@@ -37,12 +30,20 @@ A footnote can also have multiple lines[^2].
 | Digital Output           |
 | Analog Input             |
 | Analog Output            |
-|   - DAC[^1]             |
+|   - DAC <sup>[^1]</sup>  |
 |   - PWM                  |
 |   - Servo                |
 |   - Tone                 |
 
 [^1] : Analog Output - DAC is only available on ESP32
+
+Here is a simple footnote[^2].
+
+A footnote can also have multiple lines[^3].
+
+[^2]: My reference.
+[^3]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
 
 
 | Additional Functions        | Arduino Parts            |
