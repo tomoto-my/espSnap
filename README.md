@@ -23,6 +23,13 @@ To test connection between host computer and espSnap, use any web browser and ty
 
 The functionality implemented by **_espSnap_** are as follows
 
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
 
 | Basic Arduino Functions  |
 |:------------------------:|
