@@ -30,20 +30,12 @@ The functionality implemented by **_espSnap_** are as follows
 | Digital Output           |
 | Analog Input             |
 | Analog Output            |
-|   - DAC <sup>[^1]</sup>  |
+|   - DAC <sup>[1]</sup>  |
 |   - PWM                  |
 |   - Servo                |
 |   - Tone                 |
 
-[^1] : Analog Output - DAC is only available on ESP32
-
-Here is a simple footnote[^2].
-
-A footnote can also have multiple lines[^3].
-
-[^2]: My reference.
-[^3]: To add line breaks within a footnote, prefix new lines with 2 spaces.
-  This is a second line.
+###### Note [1] : Analog Output - DAC is only available on ESP32
 
 
 | Additional Functions        | Arduino Parts            |
