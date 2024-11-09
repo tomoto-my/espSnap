@@ -107,8 +107,8 @@ const char *mdns_default_id = mDNSID;    ///< Default mDNS ID
 // const char *ssid = STASSID;
 // const char *password = STAPSK;
 
-String station_ssid = "";
-String station_psk = "";
+String station_ssid = "YOUR-AP-SSID";
+String station_psk = "YOUR-AP-PASSWORD";
 String mdns_id = mdns_default_id;
 
 // MDNSResponder::hMDNSService hMDNSService = 0;  // The handle of the clock service in the MDNS responder

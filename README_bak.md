@@ -8,26 +8,24 @@ It follows the concept of [**Firmata Lbirary**](https://docs.arduino.cc/retired/
 
 In this implementation, we used http via the ***url block*** ![**url**](assets/images/url_block_espsnap_local_h20.png) in **Snap4Arduino** as the integration method. With ESP32 or ESP8266 as the target Arduino boards we planned to use, **Wi-Fi** is the preferred communication method between PC running **Snap4Arduino** and the **_espSnap_** Arduino board.
 
-We provide [**"Custom Blocks"**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#custom-block-for-espsnap) for **Snap4Arduino** so that **Snap4Arduino** users will feel the Arduino board as an integrated part of it, and interact with **_espSnap_** Arduino board via the **Custom Blocks** easily.
+We provide [**"Custom Blocks"**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#custom-block-for-espsnap) for **Snap4Arduino** so that **Snap4Arduino** users will feel the Arduino board as an integrated part of it, and interact with **_espSnap_** Arduino board via the **Custom Block** easily.
 
 ***espSnap*** can be configured to connect to any local **Wi-Fi** Access Point, or on failure, will start up under **SoftAP mode** allowing up to 4 host computers to connect to it.
+
+**mDNS** has been configured, this allows the use of domain name in url instead of IP address. The default **mDNS ID** is "***espsnap.local***"<BR>
 
 The default **SoftAP mode** (when it cannot connect to the local Wi-Fi AP)<BR>
 - SSID : **espsnap_xxxxxx** <BR>
     where xxxxxx is the last 6 characters of MAC address<BR>
 - PASSWORD : **test1234**<BR>
 
-**mDNS** has been configured in **_espSnap_**, this allows the use of domain name in url instead of IP address. The default **mDNS ID** is "***espsnap.local***"<BR>
-
-
-To test connection between host computer and ***espSnap***, use any web browser and type the following url in the address bar
-
+To test connection between host computer and ***espSnap***, use any web browser and type the following url in the address bar<BR>
+<BR>
 **http://espsnap.local/**
+<BR>
+A web page with **_espSnap_** basic information should show up confirming the connection between the PC and the **_espSnap_**. Users can proceed **Snap4Arduino** and import the [**espSnap_Library.xml**](https://github.com/tomoto-my/espSnap/espSnap_Custom_Blocks_Library/espSnap_Library.xml) to use the functions provided by **_espSnap_** as listed below.
 
-A web page with **_espSnap_** basic information should show up confirming the connection between the PC and the **_espSnap_**. Users can proceed to **Snap4Arduino** and import the [**espSnap_Library.xml**](https://github.com/tomoto-my/espSnap/espSnap_Custom_Blocks_Library/espSnap_Library.xml) to use the functions provided by **_espSnap_** as listed below.
-
-mDNS, SSID and PASSWORD can be change via web browser from **http://espsnap.local/config**
-
+mDNS, SSID and PASSWORD can all be change via web browser from **http://espsnap.local/config**
 <BR>
 
 ---
@@ -107,32 +105,19 @@ Follow the following steps to download and install ***espSnap*** on the ESP32/ES
 
 - Download the latest version of ***[espSnap main.zip](https://github.com/tomoto-my/espSnap/archive/refs/heads/main.zip)***
 
-- Extract it under your `Arduino/libraries` subdirectory
-    - by default the name of the subdirectory will be "espSnap-master"
-    - you may just leave it as "espSnap-master" or rename it to "espSnap"
-    - Arduino IDE will ignore the "-master" at the end of the name
+- Extract it under your `Arduino` or `Arduino/sketch` subdirectory
 
-- Use your Arduino IDE to open the Arduino Sketch from File->Examples->"Examples from Custom Libraries"->espSnap->**_espSnap_**
+- Use your Arduino IDE to open the **`espSnap.ino`** Arduino Sketch.
 
-- **If you plan to use a local Wi-Fi Access Point, remember to change the SSID and PASSWORD.** Or, otherwise, the SSID and PASSWORD can be change any time via web browser.
+- **If you plan to use a local Wi-Fi Access Point, remember to change the SSID and PASSWORD.** Otherwise, the SSID and PASSWORD can be change any time via web browser.
 
 - Follow the usual step of selecting the ESP32/ESP8266 board to program and compile and upload.
 
-- **The sketch needs bigger code space than the "Default" setting.** <BR>
-    Hence need to change **Partition Scheme** setting as follow
-    - **WEMOS D1 R32**
-        - Partition Scheme: <BR>
-        **"No OTA (Large APP)"** or <BR>
-        **"Minimal SPIFFS (Large APPS with OTA)"**
-    - **NodeMCU 1.0 (ESP-12E Module)**
-        - Flash Size: <BR>
-        **"4MB (FS:2MB OTA:~1019KB)"**
-
 If some libraries required are missing during compilation, please make sure the list of libraries as listed below had been installed. The version of the various libraries used had been included just in case some user face compatibility issue. As a normal practice, just install the latest version. It is not necessary to use the same version unless there is problem compiling the sketch.
+
 
 <BR>
 
----
 ### Arduino Libraries used in ***espSnap*** sketch as follows:
 ###### Board Manager
 - Arduino ESP32 Boards - 2.0.18
