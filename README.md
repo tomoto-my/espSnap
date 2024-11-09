@@ -93,7 +93,9 @@ Latest release [![espSnap release-v1.0.0](/assets/images/github_espSnap_release-
 ---
 ## Custom Blocks for ***espSnap***
 
-**"Custom Blocks"** for **_espSnap_** is available as **espSnap_Library** in the file [**espSnap_Library.xml**](https://github.com/tomoto-my/espSnap/espSnap_Custom_Blocks_Library/espSnap_Library.xml).
+**"Custom Blocks"** for **_espSnap_** is available as **espSnap_Library** in the file [**espSnap_Library.xml**](https://github.com/tomoto-my/espSnap/tree/main/espSnap_Custom_Blocks_Library/espSnap_Library.xml).
+
+[**espSnap_Library.xml**](espSnap_Custom_Blocks_Library/espSnap_Library.xml)
 
 It contains all the **"Custom Blocks"** for all functions in **Basic Arduino Functions** and **Additional Functions** listed above, and can be imported into any new or existing **Snap4Arduino** project file.
 
