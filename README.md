@@ -1,4 +1,4 @@
-# ***espSnap***
+# _espSnap_
 
 ## A Http Server bridging Snap4Arduino and ESP32/ESP8266 Arduino boards
 
@@ -8,7 +8,7 @@ It follows the concept of [**Firmata Lbirary**](https://docs.arduino.cc/retired/
 
 In this implementation, we used http via the ***url block*** ![**url**](assets/images/url_block_espsnap_local_h20.png) in **Snap4Arduino** as the integration method. With ESP32 or ESP8266 as the target Arduino boards we planned to use, **Wi-Fi** is the preferred communication method between PC running **Snap4Arduino** and the **_espSnap_** Arduino board.
 
-We provide [**"Custom Blocks"**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#custom-block-for-espsnap) for **Snap4Arduino** so that **Snap4Arduino** users will feel the Arduino board as an integrated part of it, and interact with **_espSnap_** Arduino board via the **Custom Blocks** easily.
+[**espSnap_Library**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#espSnap_Library-for-Snap4Arduino) is a library which contains **"Custom Blocks** for **_espSnap_** for **Snap4Arduino** so that **Snap4Arduino** users can use the **"Custom Blocks** to interact with the **_esnSnap_** Arduino board easily. This makes the **_espSnap_** as an integrated part of **Snap4Arduino**
 
 ***espSnap*** can be configured to connect to any local **Wi-Fi** Access Point, or on failure, will start up under **SoftAP mode** allowing up to 4 host computers to connect to it.
 
@@ -91,9 +91,9 @@ Latest release [![espSnap release-v1.0.0](/assets/images/github_espSnap_release-
 <BR>
 
 ---
-## Custom Blocks for ***espSnap***
+## espSnap_Library for Snap4Arduino
 
-**"Custom Blocks"** for **_espSnap_** is available as **espSnap_Library** in the file
+**espSnap_Library** for **Snap4Arduino** is a library file with all **Custom Blocks** for **_espSnap_** and is available as in the file
 
 [**espSnap_Library.xml**](espSnap_Custom_Blocks_Library/espSnap_Library.xml)
 
