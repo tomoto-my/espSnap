@@ -26,6 +26,22 @@ To test connection between host computer and ***espSnap***, use any web browser 
 
 A web page with **_espSnap_** basic information should show up confirming the connection between the PC and the **_espSnap_**. Users can proceed to **Snap4Arduino** and import the [**espSnap_Library.xml**](https://github.com/tomoto-my/espSnap/espSnap_Custom_Blocks_Library/espSnap_Library.xml) to use the functions provided by **_espSnap_** as listed below.
 
+If the web browser cannot access the web page from **_espSnap_**, then please check the followings:
+- power supply for **_espSnap_** had been connected and **"ON"**
+    - the **_built-in led_** on Wemos D1 R32 or NodeMCU 1.0 (ESP-12E Module) should blink for a short period during power on
+    - this blinking action indicates **_espSnap_** is trying to connect to the local AP which had been configured previously
+- Wi-Fi connection for **_espSnap_**
+    - check the status of the **_built-in led_** on **Wemos D1 R32** or **NodeMCU 1.0 (ESP-12E Module)**
+        - remains permanently **"ON"**, then it is on **Soft-AP** mode
+        - remains permanently **"OFF"**, then it is connected to the **local AP**
+- Please make sure the PC is connected to the same AP as the **_espSnap_**
+- Please check whether there is any **firewall/anti-virus** which **blocks access** to the **"http://espsnap.local/"**.
+    - The **_espSnap_** should be within the local area network.
+    - You will need to either
+        - disable the firewall, which may be a security issue if the local AP is connected to internet
+        - from the firewall settings, allow access to local area network only, or the particular IP address only
+    - retry until connected from web browser to **_espSnap_** had been tested ok.
+
 mDNS, SSID and PASSWORD can be change via web browser from **http://espsnap.local/config**
 
 <BR>
@@ -75,13 +91,15 @@ Latest release [![espSnap release-v1.0.0](/assets/images/github_espSnap_release-
 <BR>
 
 ---
-## Custom Block for ***espSnap***
+## Custom Blocks for ***espSnap***
 
-**"Custom Block"** for **_espSnap_** is available in the file [**espSnap_Library.xml**](https://github.com/tomoto-my/espSnap/espSnap_Custom_Blocks_Library/espSnap_Library.xml).
+**"Custom Blocks"** for **_espSnap_** is available as **espSnap_Library** in the file [**espSnap_Library.xml**](https://github.com/tomoto-my/espSnap/espSnap_Custom_Blocks_Library/espSnap_Library.xml).
 
-It contains **"Custom Blocks"** for all the **Basic Arduino Functions** and **Additional Functions** listed above.
+It contains all the **"Custom Blocks"** for all functions in **Basic Arduino Functions** and **Additional Functions** listed above, and can be imported into any new or existing **Snap4Arduino** project file.
 
-For detailed example of how to use the **"Custom Block"**, refer to the [**Companion Tutorials with Examples**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#companion-tutorials-with-examples) below.
+Just go to **"Files->Import"** and select the library file provided.
+
+For detailed examples on how to use the **espSnap_Library**, refer to the [**Companion Tutorials with Examples**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#companion-tutorials-with-examples) below.
 
 
 <BR>
@@ -94,8 +112,9 @@ For detailed example of how to use the **"Custom Block"**, refer to the [**Compa
 [**Nan Hwa Snap4Arduino Training**](https://github.com/tomoto-my/Nan-Hwa-Snap4Arduino-Training)
 
 This companion tutorial contains
-- 1 section with examples as **_Basic Introduction to Snap_**, and
-- 2 sections with examples on using the **"Custom Blocks"** of **_espSnap_** in **Snap4Arduino**
+- Section 1 with examples as **_Basic Introduction to Snap_**, and
+- Section 2 with examples on using the **Basic Arduino Functions** of the **espSnap_Library** in **Snap4Arduino**
+- Section 3 with examples on using the **Additional Functions** of the **espSnap_Library** in **Snap4Arduino**
 
 <BR>
 
@@ -108,11 +127,11 @@ Follow the following steps to download and install ***espSnap*** on the ESP32/ES
 - Download the latest version of ***[espSnap main.zip](https://github.com/tomoto-my/espSnap/archive/refs/heads/main.zip)***
 
 - Extract it under your `Arduino/libraries` subdirectory
-    - by default the name of the subdirectory will be "espSnap-master"
-    - you may just leave it as "espSnap-master" or rename it to "espSnap"
-    - Arduino IDE will ignore the "-master" at the end of the name
+    - by default the name of the subdirectory will be "espSnap-main"
+    - you may just leave it as "espSnap-main" or rename it to "espSnap"
+    - **Arduino IDE** will ignore the "-main" at the end of the name
 
-- Use your Arduino IDE to open the Arduino Sketch from File->Examples->"Examples from Custom Libraries"->espSnap->**_espSnap_**
+- Use your **Arduino IDE** to open the **Arduino** Sketch from File->Examples->"Examples from Custom Libraries"->espSnap->**_espSnap_**
 
 - **If you plan to use a local Wi-Fi Access Point, remember to change the SSID and PASSWORD.** Or, otherwise, the SSID and PASSWORD can be change any time via web browser.
 
@@ -128,13 +147,15 @@ Follow the following steps to download and install ***espSnap*** on the ESP32/ES
         - Flash Size: <BR>
         **"4MB (FS:2MB OTA:~1019KB)"**
 
-If some libraries required are missing during compilation, please make sure the list of libraries as listed below had been installed. The version of the various libraries used had been included just in case some user face compatibility issue. As a normal practice, just install the latest version. It is not necessary to use the same version unless there is problem compiling the sketch.
-
 <BR>
 
 ---
 ### Arduino Libraries used in ***espSnap*** sketch as follows:
+
+If some libraries required are missing during compilation, please make sure the list of libraries as listed below had been installed. The version of the various libraries used had been included just in case some user face compatibility issue. As a normal practice, just install the latest version. It is not necessary to use the same version unless there is problem compiling the sketch.
+
 ###### Board Manager
+
 - Arduino ESP32 Boards - 2.0.18
 
 - esp32 by Espressif Systems - 3.0.4
@@ -142,6 +163,7 @@ If some libraries required are missing during compilation, please make sure the 
 - esp8266 by ESP8266 Community - 3.1.2
 
 ###### Library Manager
+
 - floatToString by Ted Toal - 1.3.1
 
 - DHT22 by dvarrel - 1.0.7
