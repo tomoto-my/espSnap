@@ -8,7 +8,7 @@ It follows the concept of [**Firmata Lbirary**](https://docs.arduino.cc/retired/
 
 In this implementation, we used http via the ***url block*** ![**url**](assets/images/url_block_espsnap_local_h20.png) in **Snap4Arduino** as the integration method. With ESP32 or ESP8266 as the target Arduino boards we planned to use, **Wi-Fi** is the preferred communication method.
 
-We provide **"Custom Blocks"** in **Snap4Arduino** so that **Snap4Arduino** users will feel the Arduino board as an integrated part of it, and focus on using it instead of learn how to use it.
+We provide [**"Custom Blocks"**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#custom-block-for-espsnap) in **Snap4Arduino** so that **Snap4Arduino** users will feel the Arduino board as an integrated part of it, and focus on using it instead of learn how to use it.
 
 ***espSnap*** can be configured to connect to any local **Wi-Fi** Access Point, or on failure, will start up under **SoftAP mode** allowing up to 4 host computers to connect to it.
 
@@ -24,7 +24,7 @@ To test connection between host computer and ***espSnap***, use any web browser 
 
 mDNS, SSID and PASSWORD can all be change via web browser from **http://espsnap.local/config**
 
-
+---
 ### Functions implemented in ***espSnap*** are as follows
 
 | Basic Arduino Functions  |
@@ -71,12 +71,12 @@ Latest release [![espSnap release-v1.0.0](/assets/images/github_espSnap_release-
 ---
 ## Custom Block for ***espSnap***
 
-**"Custom Block"** for **_espSnap_** is available in subdirectory **`assets/Snap_Library/`**
+**"Custom Block"** for **_espSnap_** is available in the file [**espSnap_Library.xml**](https://github.com/tomoto-my/espSnap/espSnap_Library.xml).
 
-The file **`espSnap_Library.xml`** contains **"Custom Blocks"** for all the **Basic Arduino Functions** and **Additional Functions** listed above.
+It contains **"Custom Blocks"** for all the **Basic Arduino Functions** and **Additional Functions** listed above.
 
+For detailed example of how to use the **"Custom Block"**, refer to the [**Companion Tutorials with Examples**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#companion-tutorials-with-examples) below.
 
-For detailed example of how to use the **"Custom Block"**, refer to the [**Companion Tutorials with Examples**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#companion-tutorials-with-examples-available-at) below.
 
 <BR>
 
@@ -85,7 +85,7 @@ For detailed example of how to use the **"Custom Block"**, refer to the [**Compa
 
 **Companion Tutorials with Examples** is available at :
 
-[**Nan Hwa Snap4Arduino Training**](https://github.com/tomoto-my/nanhwasnap4arduinotraining/)
+[**Nan Hwa Snap4Arduino Training**](https://github.com/tomoto-my/Nan-Hwa-Snap4Arduino-Training)
 
 This companion tutorial contains
 - 1 section with examples as **_Basic Introduction to Snap_**, and
