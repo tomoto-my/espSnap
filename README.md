@@ -8,7 +8,7 @@ It follows the concept of [**Firmata Lbirary**](https://docs.arduino.cc/retired/
 
 In this implementation, we used http via the ***url block*** ![**url**](assets/images/url_block_espsnap_local_h20.png) in **Snap4Arduino** as the integration method. With ESP32 or ESP8266 as the target Arduino boards we planned to use, **Wi-Fi** is the preferred communication method between PC running **Snap4Arduino** and the **_espSnap_** Arduino board.
 
-[**espSnap_Library**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#espSnap_Library-for-Snap4Arduino) is a library which contains **"Custom Blocks** for **_espSnap_** for **Snap4Arduino** so that **Snap4Arduino** users can use the **"Custom Blocks"** to interact with the **_esnSnap_** Arduino board easily. This makes the **_espSnap_** as an integrated part of **Snap4Arduino**
+[**espSnap_Library**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#espSnap_Library-for-Snap4Arduino) is a library which contains **"Custom Blocks** for **_espSnap_** for **Snap4Arduino** so that **Snap4Arduino** users can use the **"Custom Blocks"** to interact with the **_espSnap_** Arduino board easily. This makes the **_espSnap_** as an integrated part of **Snap4Arduino**
 
 <BR>
 
@@ -67,7 +67,7 @@ It contains all the **"Custom Blocks"** for all functions in **Basic Arduino Fun
 
 Just start a new project file or open an existing project file from **Snap4Arduino** and go to **"Files->Import"** and select the library file provided. The **"Custom Blocks"** will be available for use.
 
-For detailed examples on how to use the **espSnap_Library**, refer to the [**Companion Tutorials with Examples**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#companion-tutorials-with-examples) below.
+For detailed explanations and examples on how to use the **espSnap_Library**, refer to the [**Companion Tutorials with Examples**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#companion-tutorials-with-examples) below.
 
 
 <BR>
