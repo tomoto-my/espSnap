@@ -111,10 +111,12 @@ For detailed examples on how to use the **espSnap_Library**, refer to the [**Com
 
 [**Nan Hwa Snap4Arduino Training**](https://github.com/tomoto-my/Nan-Hwa-Snap4Arduino-Training)
 
-This companion tutorial contains
-- Section 1 with examples as **_Basic Introduction to Snap_**, and
-- Section 2 with examples on using the **Basic Arduino Functions** of the **espSnap_Library** in **Snap4Arduino**
-- Section 3 with examples on using the **Additional Functions** of the **espSnap_Library** in **Snap4Arduino**
+This companion tutorial contains basic explanation and instructions with examples.
+
+It has 3 sections as follows :
+- Section 1 on as **_Basic Introduction to Snap_** for **Snap4Arduino**
+- Section 2 on using the **Basic Arduino Functions** of the **espSnap_Library** in **Snap4Arduino**
+- Section 3 on using the **Additional Functions** of the **espSnap_Library** in **Snap4Arduino**
 
 <BR>
 
