@@ -24,7 +24,7 @@ To test connection between host computer and ***espSnap***, use any web browser 
 
 **http://espsnap.local/**
 
-A web page with **_espSnap_** basic information should show up confirming the connection between the PC and the **_espSnap_**. Users can proceed to **Snap4Arduino** and import the [**espSnap_Library.xml**](https://github.com/tomoto-my/espSnap/espSnap_Custom_Blocks_Library/espSnap_Library.xml) to use the functions provided by **_espSnap_** as listed below.
+A web page with **_espSnap_** basic information should show up confirming the connection between the PC and the **_espSnap_**. Users can proceed to **Snap4Arduino** and import the [**espSnap_Library.xml**](espSnap_Custom_Blocks_Library/espSnap_Library.xml) to use the functions provided by **_espSnap_** as listed below.
 
 If the web browser cannot access the web page from **_espSnap_**, then please check the followings:
 - power supply for **_espSnap_** had been connected and **"ON"**
@@ -93,7 +93,7 @@ Latest release [![espSnap release-v1.0.0](/assets/images/github_espSnap_release-
 ---
 ## Custom Blocks for ***espSnap***
 
-**"Custom Blocks"** for **_espSnap_** is available as **espSnap_Library** in the file [**espSnap_Library.xml**](https://github.com/tomoto-my/espSnap/tree/main/espSnap_Custom_Blocks_Library/espSnap_Library.xml).
+**"Custom Blocks"** for **_espSnap_** is available as **espSnap_Library** in the file
 
 [**espSnap_Library.xml**](espSnap_Custom_Blocks_Library/espSnap_Library.xml)
 
@@ -113,7 +113,7 @@ For detailed examples on how to use the **espSnap_Library**, refer to the [**Com
 
 [**Nan Hwa Snap4Arduino Training**](https://github.com/tomoto-my/Nan-Hwa-Snap4Arduino-Training)
 
-This companion tutorial contains basic explanation and instructions with examples.
+This companion tutorial contains explanations and instructions with examples.
 
 It has 3 sections as follows :
 - Section 1 on as **_Basic Introduction to Snap_** for **Snap4Arduino**
@@ -128,14 +128,16 @@ It has 3 sections as follows :
 
 Follow the following steps to download and install ***espSnap*** on the ESP32/ESP8266 board of your choice
 
-- Download the latest version of ***[espSnap main.zip](https://github.com/tomoto-my/espSnap/archive/refs/heads/main.zip)***
+- Download the latest version of ***[espSnap_main.zip](https://github.com/tomoto-my/espSnap/archive/refs/heads/main.zip)***
 
 - Extract it under your `Arduino/libraries` subdirectory
     - by default the name of the subdirectory will be "espSnap-main"
     - you may just leave it as "espSnap-main" or rename it to "espSnap"
     - **Arduino IDE** will ignore the "-main" at the end of the name
 
-- Use your **Arduino IDE** to open the **Arduino** Sketch from File->Examples->"Examples from Custom Libraries"->espSnap->**_espSnap_**
+- Follow the usual steps of selecting the ESP32/ESP8266 board to program in **Arduino IDE**
+
+- Use your **Arduino IDE** to open the **_espSnap_** **Arduino** Sketch from File->Examples->"Examples from Custom Libraries"->espSnap->**_espSnap_**
 
 - **If you plan to use a local Wi-Fi Access Point, remember to change the SSID and PASSWORD.** Or, otherwise, the SSID and PASSWORD can be change any time via web browser.
 
