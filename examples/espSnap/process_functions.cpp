@@ -99,7 +99,7 @@ int tone_process_cmd(String cmd_str) {
 // Tune processing handler
 // parameter format - pin,[frequency,duration,....]
 
-String Notes_Name[] = {"B0",
+String Notes_Name[] = {"A0", "AS0", "B0",
       "C1", "CS1", "D1", "DS1", "E1", "F1", "FS1", "G1", "GS1", "A1", "AS1", "B1", 
       "C2", "CS2", "D2", "DS2", "E2", "F2", "FS2", "G2", "GS2", "A2", "AS2", "B2", 
       "C3", "CS3", "D3", "DS3", "E3", "F3", "FS3", "G3", "GS3", "A3", "AS3", "B3", 
@@ -110,7 +110,7 @@ String Notes_Name[] = {"B0",
       "C8", "CS8", "D8", "DS8"
 };
 
-int Notes_Frequency[] = { NOTE_B0, 
+int Notes_Frequency[] = { NOTE_A0, NOTE_AS0, NOTE_B0, 
       NOTE_C1, NOTE_CS1, NOTE_D1, NOTE_DS1, NOTE_E1, NOTE_F1, NOTE_FS1, NOTE_G1, NOTE_GS1, NOTE_A1, NOTE_AS1, NOTE_B1, 
       NOTE_C2, NOTE_CS2, NOTE_D2, NOTE_DS2, NOTE_E2, NOTE_F2, NOTE_FS2, NOTE_G2, NOTE_GS2, NOTE_A2, NOTE_AS2, NOTE_B2, 
       NOTE_C3, NOTE_CS3, NOTE_D3, NOTE_DS3, NOTE_E3, NOTE_F3, NOTE_FS3, NOTE_G3, NOTE_GS3, NOTE_A3, NOTE_AS3, NOTE_B3, 
@@ -199,16 +199,21 @@ int tune_process_cmd(String cmd_str) {
   int param_count = 0;
   pch = strtok((char*)cmd_str.c_str(), ",");
   while (pch != NULL) {
-    cptr[param_count++] = pch;
-    // log_d("parameter:%p:%s",pch,pch);
-    pch = strtok(NULL, ",");
+    if (param_count>TUNE_MAX_NOTES) {
+      pch = NULL;
+    }
+    else {
+      cptr[param_count++] = pch;
+      // log_d("parameter:%p:%s",pch,pch);
+      pch = strtok(NULL, ",");
+    }
   }
   // log_d("param count=%d",param_count);
 
   String pinstr = String(cptr[0]);
   int idx = 1;
   int tune_idx = 0;
-  while (idx<param_count) {
+  while ((idx<param_count) && (idx<TUNE_MAX_NOTES)) {
     String notestr = String(cptr[idx]);
     String durationstr = String(cptr[idx+1]);
     tune_notes[tune_idx] = note_pitch_to_freq(notestr);
@@ -590,7 +595,7 @@ int neopixel_process_cmd(String cmd_str) {
   else if (param_count == 2) { // brightness & fillall
     if (strcmp(cptr[0], "brightness") == 0) {
       int brightness = String(cptr[1]).toInt();
-      if (brightness < 0) brightness = 0;
+      if (brightness <= 0) brightness = 1;
       if (brightness > 255) brightness = 255;
       strip.setBrightness(brightness); // Set BRIGHTNESS (max = 255)
       strip.show();

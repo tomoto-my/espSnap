@@ -8,7 +8,7 @@
 */
 // #define SERIAL_VERBOSE
 
-#define VERSION "V1.0.0"
+#define VERSION "V1.0.1"
 
 #ifdef ESP8266
   // ESP8266
@@ -107,8 +107,8 @@ const char *mdns_default_id = mDNSID;    ///< Default mDNS ID
 // const char *ssid = STASSID;
 // const char *password = STAPSK;
 
-String station_ssid = "YOUR-AP-SSID";
-String station_psk = "YOUR-AP-PASSWORD";
+String station_ssid = "";
+String station_psk = "";
 String mdns_id = mdns_default_id;
 
 // MDNSResponder::hMDNSService hMDNSService = 0;  // The handle of the clock service in the MDNS responder
@@ -193,7 +193,7 @@ void handleRoot() {
     <tr><td colspan=\"3\">NeoPixel</td><td>WS2812B</td></tr>\r\n\
     <tr><td colspan=\"3\">LDR Light Sensor</td><td>KY-018</td></tr>\r\n\
     <tr><td colspan=\"3\">Rotary Encoder</td><td>EC11 / KY-040</td></tr>\r\n\
-    <tr><td colspan=\"3\">Rain Sensor Module</td><td></td></tr>\r\n\
+    <tr><td colspan=\"3\">Rain Sensor Module</td><td>YL-83</td></tr>\r\n\
     </table>\r\n\
     <table style=\"width:70%\"><tr><th><h3>espSnap</h3>\
     <h4>HttpServer for Snap4Arduino<BR>source code for ESP32 and ESP8266 for Arduino</h4>\r\n\
