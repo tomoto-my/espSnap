@@ -82,7 +82,7 @@ For detailed explanations and examples on how to use the **espSnap_Library**, re
 This companion tutorial contains explanations and instructions with examples.
 
 It has 3 sections as follows :
-- Section 1 on **Basic Introduction to Snap_!_** for **Snap4Arduino**
+- Section 1 on **Basic Introduction to Snap!** for **Snap4Arduino**
 - Section 2 on **Basic Arduino Functions** of the **espSnap_Library** for **Snap4Arduino**
 - Section 3 on **Additional Functions** of the **espSnap_Library** for **Snap4Arduino**
 
