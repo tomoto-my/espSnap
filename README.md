@@ -8,7 +8,7 @@ It follows the concept of [**Firmata Lbirary**](https://docs.arduino.cc/retired/
 
 In this implementation, we used http via the ***url block*** ![**url**](assets/images/url_block_espsnap_local_h20.png) in **Snap4Arduino** as the integration method. With ESP32 or ESP8266 as the target Arduino boards we planned to use, **Wi-Fi** is the preferred communication method between PC running **Snap4Arduino** and the **_espSnap_** Arduino board.
 
-[**espSnap_Library**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#espSnap_Library-for-Snap4Arduino) is a library which contains **"Custom Blocks** for **_espSnap_** for **Snap4Arduino** so that **Snap4Arduino** users can use the **"Custom Blocks"** to interact with the **_espSnap_** Arduino board easily. This makes the **_espSnap_** as an integrated part of **Snap4Arduino**
+[**espSnap_Library**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#espSnap_Library-for-Snap4Arduino) contains **"Custom Blocks"** for **_espSnap_** is provided as a library for **Snap4Arduino**. Users can use the **espSnap_Library** **"Custom Blocks"** to interact with the **_espSnap_** Arduino board and modules transparently. This makes the **_espSnap_** function as an integrated part of **Snap4Arduino**. Just click on "File->Import..." in **Snap4Arduino** and select the file to import the **espSnap_Library**.
 
 <BR>
 
@@ -29,7 +29,7 @@ In this implementation, we used http via the ***url block*** ![**url**](assets/i
 ###### Note [1] : Analog Output - DAC is only available on ESP32
 
 
-| Additional Functions        | Arduino Parts            |
+| Additional Functions        | Arduino Parts           |
 |:----------------------------|:------------------------|
 | I2C OLED                    | I2C OLED SSD1306 128x64 |
 | I2C LCD                     | I2C LCD 16x2            |
@@ -39,7 +39,7 @@ In this implementation, we used http via the ***url block*** ![**url**](assets/i
 | NeoPixel                    | WS2812B                 |
 | LDR Light Sensor            | KY-018                  |
 | Rotary Encoder              | EC11 / KY-040           |
-| Rain Sensor Module          |                         |
+| Rain Sensor Module          | YL-83                   |
 
 
 
@@ -82,9 +82,9 @@ For detailed explanations and examples on how to use the **espSnap_Library**, re
 This companion tutorial contains explanations and instructions with examples.
 
 It has 3 sections as follows :
-- Section 1 on as **_Basic Introduction to Snap_** for **Snap4Arduino**
-- Section 2 on using the **Basic Arduino Functions** of the **espSnap_Library** in **Snap4Arduino**
-- Section 3 on using the **Additional Functions** of the **espSnap_Library** in **Snap4Arduino**
+- Section 1 on **Basic Introduction to Snap_!_** for **Snap4Arduino**
+- Section 2 on **Basic Arduino Functions** of the **espSnap_Library** for **Snap4Arduino**
+- Section 3 on **Additional Functions** of the **espSnap_Library** for **Snap4Arduino**
 
 <BR>
 
