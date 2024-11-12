@@ -51,7 +51,7 @@ In this implementation, we used http via the ***url block*** ![**url**](assets/i
  - NodeMCU 1.0 (ESP-12E Module)
 
 
-Latest release [![espSnap release-v1.0.0](/assets/images/github-espSnap_release_1.0.1-blue.svg)](https://github.com/tomoto-my/espsnap/releases/latest/)
+Latest release [![espSnap release-v1.0.2](/assets/images/github-espSnap_release_1.0.2-blue.svg)](https://github.com/tomoto-my/espsnap/releases/latest/)
 
 
 <BR>
