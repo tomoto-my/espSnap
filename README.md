@@ -11,7 +11,7 @@ In this implementation, we used http via the ***url block*** ![**url**](assets/i
 [**espSnap_Library**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#espSnap_Library-for-Snap4Arduino) contains **"Custom Blocks"** for **_espSnap_** is provided as a library for **Snap4Arduino**. Users can use the **espSnap_Library** **"Custom Blocks"** to interact with the **_espSnap_** Arduino board and modules transparently. This makes the **_espSnap_** function as an integrated part of **Snap4Arduino**. Just click on "File->Import..." in **Snap4Arduino** and select the file to import the **espSnap_Library**.
 
 
-Latest release [![espSnap release-v1.0.3](/assets/images/github-espSnap_release_1.0.3-blue.svg)](https://github.com/tomoto-my/espsnap/releases/latest/)
+Latest release [![espSnap release-v1.1.0](/assets/images/github-espSnap_release_1.1.0-blue.svg)](https://github.com/tomoto-my/espsnap/releases/latest/)
 
 <BR>
 
