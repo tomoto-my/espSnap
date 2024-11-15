@@ -213,7 +213,13 @@ void handleRoot() {
 // retrieve IP address of espSnap
 //http://espsnap.local/getip
 void handleGetIP() {
-  String ip_str = WiFi.localIP().toString();
+  String ip_str;
+  if(softAP) {
+    ip_str = WiFi.softAPIP().toString();
+  }
+  else {
+    ip_str = WiFi.localIP().toString();
+  }
   Serial.println(ip_str);
   String resp = "OK\nIP address\n" + ip_str + "\n";
   server.send(200, "text/plain", resp);

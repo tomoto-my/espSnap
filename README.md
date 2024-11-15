@@ -10,6 +10,9 @@ In this implementation, we used http via the ***url block*** ![**url**](assets/i
 
 [**espSnap_Library**](https://github.com/tomoto-my/espSnap/tree/main?tab=readme-ov-file#espSnap_Library-for-Snap4Arduino) contains **"Custom Blocks"** for **_espSnap_** is provided as a library for **Snap4Arduino**. Users can use the **espSnap_Library** **"Custom Blocks"** to interact with the **_espSnap_** Arduino board and modules transparently. This makes the **_espSnap_** function as an integrated part of **Snap4Arduino**. Just click on "File->Import..." in **Snap4Arduino** and select the file to import the **espSnap_Library**.
 
+
+Latest release [![espSnap release-v1.0.3](/assets/images/github-espSnap_release_1.0.3-blue.svg)](https://github.com/tomoto-my/espsnap/releases/latest/)
+
 <BR>
 
 ---
@@ -51,8 +54,6 @@ In this implementation, we used http via the ***url block*** ![**url**](assets/i
  - NodeMCU 1.0 (ESP-12E Module)
 
 
-Latest release [![espSnap release-v1.0.2](/assets/images/github-espSnap_release_1.0.2-blue.svg)](https://github.com/tomoto-my/espsnap/releases/latest/)
-
 
 <BR>
 
@@ -81,10 +82,10 @@ For detailed explanations and examples on how to use the **espSnap_Library**, re
 
 This companion tutorial contains explanations and instructions with examples.
 
-It has 3 sections as follows :
-- Section 1 on **Basic Introduction to Snap!** for **Snap4Arduino**
-- Section 2 on **Basic Arduino Functions** of the **espSnap_Library** for **Snap4Arduino**
-- Section 3 on **Additional Functions** of the **espSnap_Library** for **Snap4Arduino**
+It has 3 sessions as follows :
+- Session 1 : **Introduction to Visual Programming Snap!**
+- Session 2 : **Basic Functions of Snap! + Arduino**
+- Session 3 : **Use Arduino Modules with Snap!**
 
 <BR>
 
@@ -159,6 +160,7 @@ If the web browser cannot access the web page from **_espSnap_**, then please ch
 mDNS, SSID and PASSWORD can be change via web browser from **http://espsnap.local/config**
 
 
+<BR>
 
 ---
 ### Arduino Libraries used in ***espSnap*** sketch as follows:

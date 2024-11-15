@@ -1345,8 +1345,8 @@ void rotary_encoder_update() {
     }
     // Serial.print("Position: ");
     // Serial.println(rotary_encoder_position);
+    rotary_encoder_aLastState = rotary_encoder_aState; // Updates the previous state of the outputA with the current state
   } 
-  rotary_encoder_aLastState = rotary_encoder_aState; // Updates the previous state of the outputA with the current state
 
 }
 
