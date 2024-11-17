@@ -8,7 +8,7 @@
 */
 // #define SERIAL_VERBOSE
 
-#define VERSION "V1.0.1"
+#define VERSION "V1.1.0"
 
 #ifdef ESP8266
   // ESP8266
@@ -30,7 +30,7 @@
 // ESP32 : ADC1 pins available are GPIO34, GPIO35, GPIO36, GPIO39 (GPIO32 and GPIO33 available without pins)
 // ESP32 : ADC2 does not work when wifi is working
 // Analog Output - GPIO25 / GPIO26
-// PWM - 
+// PWM - 0,2,4,5,12,13,14,15,16,17,18,19,21,22,23,25,26,27,32,33 
 // I2C - 
 // SCL : GPIO22
 // SDA : GPIO21
